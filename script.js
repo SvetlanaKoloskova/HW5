@@ -32,7 +32,7 @@ function squareNumber(a) {
 }
 
 squareNumber(2);
-squareNumber(5);*/
+squareNumber(5);
 
 //Задание 3.2
 
@@ -41,4 +41,20 @@ function squareNumber(a) {
 }
 
 console.log(squareNumber(2));
-console.log(squareNumber(5));
+console.log(squareNumber(5));*/
+
+//Задание 4
+
+function sayHello() {
+    userAnswer = prompt('Сколько Вам лет?');
+
+    if (userAnswer <= 0) {
+        alert('Вы ввели неправильное значение');
+    } else if (userAnswer > 0 && userAnswer <= 12) {
+        alert('Привет, друг!');
+    } else {
+        alert('Добро пожаловать!');
+    }
+}
+
+sayHello();
