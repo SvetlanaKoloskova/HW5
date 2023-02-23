@@ -1,25 +1,28 @@
 //Задание 1
 
- /*function searchMinNumber(a, b) {
+/*function searchMinNumber(a, b) {
     if (a < b) {
-        alert(a);
+        return a;
     } else {
-        alert(b);
+        return b;
     }
- }
+}
 
-minNumber(8, 4);
-minNumber(6, 6);*/
+console.log(searchMinNumber(8, 4));
+console.log(searchMinNumber(6, 6));
 
 //Задание 2
 
 function checkEvenNumber(a) {
     if (a % 2 == 0) {
-        alert('Число четное');
+        return `Число ${a} четное`;
     } else {
-        alert('Число нечетное')
+        return `Число ${a} нечетное`;
     }
 }
 
-checkEvenNumber(2);
-checkEvenNumber(5);
+console.log(checkEvenNumber(2));
+console.log(checkEvenNumber(5));*/
+
+//Задание 3
+
