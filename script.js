@@ -1,6 +1,6 @@
 //Задание 1
 
-/*function searchMinNumber(a, b) {
+function searchMinNumber(a, b) {
     if (a < b) {
         return a;
     } else {
@@ -41,12 +41,12 @@ function squareNumber(a) {
 }
 
 console.log(squareNumber(2));
-console.log(squareNumber(5));*/
+console.log(squareNumber(5));
 
 //Задание 4
 
 function sayHello() {
-    userAnswer = prompt('Сколько Вам лет?');
+    userAnswer = Number(prompt('Сколько Вам лет?'));
 
     if (userAnswer <= 0) {
         alert('Вы ввели неправильное значение');
@@ -58,3 +58,47 @@ function sayHello() {
 }
 
 sayHello();
+
+//Задание 5
+
+function multOfNumbers(a, b) {
+    if (!isNaN(a) && !isNaN(b)) {
+        return a * b;
+    } else {
+        return 'Одно или оба значения не являются числом';
+    }
+}
+
+console.log(multOfNumbers(5, 5));
+console.log(multOfNumbers(9, 'gdf'));
+console.log(multOfNumbers('fr', 'frgvd'));
+
+//Задание 6
+
+function squareNumber() {
+    let userAnswer = prompt('Введите число');
+     
+    if (!isNaN(userAnswer)) {
+        let result = userAnswer ** 3;
+        return `${userAnswer} в кубе равняется ${result}`;
+    } else {
+        return 'Переданный параметр не является числом';
+    }    
+}
+
+console.log(squareNumber());
+
+//Задание 6 (не работает)
+
+function squareNumber() {
+    let userAnswer = prompt('Введите число');
+     
+    if (typeof (userAnswer) != 'number') {
+        return 'Переданный параметр не является числом';
+    } else {
+        let result = userAnswer ** 3;
+        return `${userAnswer} в кубе равняется ${result}`;
+    }    
+}
+
+console.log(squareNumber());
