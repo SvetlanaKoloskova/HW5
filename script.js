@@ -22,7 +22,23 @@ function checkEvenNumber(a) {
 }
 
 console.log(checkEvenNumber(2));
-console.log(checkEvenNumber(5));*/
+console.log(checkEvenNumber(5));
 
-//Задание 3
+//Задание 3.1
 
+function squareNumber(a) {
+    let result = a ** 2;
+    console.log(result);
+}
+
+squareNumber(2);
+squareNumber(5);*/
+
+//Задание 3.2
+
+function squareNumber(a) {
+    return a ** 2;
+}
+
+console.log(squareNumber(2));
+console.log(squareNumber(5));
